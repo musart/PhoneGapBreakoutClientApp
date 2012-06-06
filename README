@@ -4,7 +4,19 @@ One is Android, the other is iOS.
 Android is using websocket plugin because Android doesn't support 
 WebSocket in WebView.(I tested WebSocket functionality with ICS 4.0.4 on Galaxy S)
 
+The WebSocket I used is https://github.com/anismiles/websocket-android-phonegap.
+However the WebSocket in this plugin is old one, so it is not able to communicate with breakout.js server.
+I added new WebSocket spec in the plugin. The code is https://github.com/musart/websocket-android-phonegap.
+
 iOS is not using websocket plugin. WebSocket in UIWebView is working fine.
 (I tested WebSocket functionality with iOS 5.1 on iPhone 4GS)
 
+Pre-condition
+-------------
+
+Android
+- You have to download Cordova 1.7 library for using it in eclipse.
+
+iOS
+- You have to install Cordova 1.7 library in your OSX.
 
